@@ -1,0 +1,35 @@
+{
+  "changed_evidence": {
+    "request_id": "refund-1",
+    "approved_amount_cents": 8000,
+    "current_amount_cents": 12000,
+    "approved_version": 7,
+    "current_version": 8,
+    "decision": "HOLD",
+    "reason": "Approval scope differs from current record",
+    "submitted": false,
+    "observed_effect": false
+  },
+  "acceptance_only": {
+    "request_id": "refund-1",
+    "approved_amount_cents": 8000,
+    "current_amount_cents": 8000,
+    "approved_version": 7,
+    "current_version": 7,
+    "decision": "UNCONFIRMED",
+    "reason": "API acceptance alone does not confirm an effect",
+    "submitted": true,
+    "observed_effect": false
+  },
+  "observed_fake_effect": {
+    "request_id": "refund-1",
+    "approved_amount_cents": 8000,
+    "current_amount_cents": 8000,
+    "approved_version": 7,
+    "current_version": 7,
+    "decision": "COMPLETED",
+    "reason": "Fake adapter state observed",
+    "submitted": true,
+    "observed_effect": true
+  }
+}

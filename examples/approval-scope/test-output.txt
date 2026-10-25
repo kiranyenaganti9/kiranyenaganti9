@@ -1,0 +1,11 @@
+test_acceptance_does_not_prove_effect (test_example.ScopeTests) ... ok
+test_amount_change_holds_without_effect (test_example.ScopeTests) ... ok
+test_invalid_amount_never_submits (test_example.ScopeTests) ... ok
+test_matching_scope_observes_fake_effect (test_example.ScopeTests) ... ok
+test_other_request_cannot_reuse_approval (test_example.ScopeTests) ... ok
+test_version_change_holds_even_when_amount_matches (test_example.ScopeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
