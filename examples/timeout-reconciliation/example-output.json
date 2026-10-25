@@ -1,0 +1,17 @@
+{
+  "after_timeout": {
+    "decision": "DO_NOT_REPEAT",
+    "evidence": {
+      "operation": "refund-42",
+      "amount": 8000,
+      "status": "COMPLETED"
+    }
+  },
+  "readback_unavailable": {
+    "decision": "RECONCILE_OR_ESCALATE",
+    "evidence": {
+      "status": "UNKNOWN"
+    }
+  },
+  "fake_effects": 1
+}

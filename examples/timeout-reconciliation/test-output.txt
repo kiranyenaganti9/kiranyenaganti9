@@ -1,0 +1,11 @@
+test_absent_record_is_not_proof_of_safe_retry (test_example.RetryTests) ... ok
+test_changed_parameters_rejected (test_example.RetryTests) ... ok
+test_new_key_can_duplicate_the_business_action (test_example.RetryTests) ... ok
+test_same_key_same_parameters_does_not_duplicate (test_example.RetryTests) ... ok
+test_timeout_can_follow_a_committed_effect (test_example.RetryTests) ... ok
+test_unavailable_readback_preserves_uncertainty (test_example.RetryTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK
