@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+ <defs>
+  <style>
+  text {font-family: 'DejaVu Sans', Arial, sans-serif; fill:#101f37}
+  .h{font-size:50px;font-weight:800}.sub{font-size:24px;fill:#547088}.cap{font-size:20px;font-weight:650}.small{font-size:17px;fill:#4a637b}.mono{font-size:18px;font-family:'DejaVu Sans Mono',monospace}.tiny{font-size:15px;fill:#62778b}
+  </style>
+  <marker id="gArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#079a80"/></marker>
+  <marker id="rArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#db5564"/></marker>
+ </defs>
+ <rect width="1600" height="900" fill="#f7fafc"/>
+ <rect x="54" y="42" width="232" height="42" rx="21" fill="#dff5f0"/>
+ <text x="74" y="70" font-size="19" font-weight="750" fill="#047b6f">DataGovernAI / Design study</text>
+ <text x="55" y="148" class="h">A valid token can have the wrong audience.</text>
+ <text x="57" y="195" class="sub">One agent, two MCP tools. The credential does not transfer across resource boundaries.</text>
+ <rect x="55" y="253" width="1490" height="240" rx="24" fill="#fff" stroke="#d9e8ec" stroke-width="2"/>
+ <rect x="55" y="512" width="1490" height="240" rx="24" fill="#fff" stroke="#d9e8ec" stroke-width="2"/>
+ <rect x="83" y="277" width="335" height="188" rx="20" fill="#eff6fb" stroke="#cbdde8"/>
+ <rect x="83" y="536" width="335" height="188" rx="20" fill="#eff6fb" stroke="#cbdde8"/>
+ <text x="111" y="324" class="cap">Agent-proposed call</text>
+ <text x="111" y="360" class="small">Tool: CRM records.read</text>
+ <text x="111" y="395" class="mono">token aud = CRM</text>
+ <rect x="111" y="412" width="175" height="32" rx="16" fill="#d8efee"/>
+ <text x="125" y="434" font-size="17" font-weight="700" fill="#007e76">Same credential</text>
+ <text x="111" y="583" class="cap">Delegated call</text>
+ <text x="111" y="619" class="small">Tool: Tickets.create</text>
+ <text x="111" y="654" class="mono">token aud = CRM</text>
+ <rect x="111" y="671" width="175" height="32" rx="16" fill="#d8efee"/>
+ <text x="125" y="693" font-size="17" font-weight="700" fill="#007e76">Same credential</text>
+ <path d="M420 368 L650 368" stroke="#079a80" stroke-width="5" fill="none" marker-end="url(#gArrow)"/>
+ <path d="M420 629 L650 629" stroke="#db5564" stroke-width="5" fill="none" marker-end="url(#rArrow)"/>
+ <rect x="666" y="277" width="374" height="188" rx="20" fill="#e6f8f2" stroke="#45b39b" stroke-width="2"/>
+ <rect x="666" y="536" width="374" height="188" rx="20" fill="#fff0f1" stroke="#e5a6ae" stroke-width="2"/>
+ <text x="697" y="316" class="cap">Independent dispatch check</text>
+ <text x="697" y="358" class="small">Expected audience: CRM</text>
+ <text x="697" y="391" class="mono" fill="#087c68">Actual audience: CRM</text>
+ <text x="697" y="437" font-size="21" font-weight="800" fill="#087c68">MATCH ✓</text>
+ <text x="697" y="576" class="cap">Independent dispatch check</text>
+ <text x="697" y="618" class="small">Expected audience: TICKETS</text>
+ <text x="697" y="651" class="mono" fill="#bb4a56">Actual audience: CRM</text>
+ <text x="697" y="697" font-size="21" font-weight="800" fill="#bb4a56">MISMATCH ✕</text>
+ <path d="M1040 372 L1135 372" stroke="#079a80" stroke-width="5" fill="none" marker-end="url(#gArrow)"/>
+ <path d="M1040 632 L1135 632" stroke="#db5564" stroke-width="5" fill="none" marker-end="url(#rArrow)"/>
+ <rect x="1151" y="291" width="352" height="155" rx="20" fill="#e8f8ef" stroke="#b8e0cb"/>
+ <rect x="1151" y="550" width="352" height="155" rx="20" fill="#fff0f0" stroke="#e9bbc0"/>
+ <text x="1183" y="336" font-size="26" font-weight="800" fill="#087c68">ALLOW</text>
+ <text x="1183" y="378" class="small">Authorized CRM request</text>
+ <text x="1183" y="411" class="small">subject to remaining checks</text>
+ <text x="1183" y="595" font-size="26" font-weight="800" fill="#c04753">DENY</text>
+ <text x="1183" y="637" class="small">Do not dispatch Tickets tool</text>
+ <text x="1183" y="670" class="small">Get ticket-specific access</text>
+ <rect x="55" y="782" width="1490" height="63" rx="15" fill="#e8f0f7"/>
+ <text x="78" y="821" font-size="20" font-weight="700" fill="#244a66">Check that the credential is valid for the destination. Other identity and permission checks still apply.</text>
+ <text x="58" y="880" class="tiny">Concept diagram: the audience check only, not a deployed control or live telemetry. Based on MCP Authorization Specification, revision 2026-07-28.</text>
+</svg>

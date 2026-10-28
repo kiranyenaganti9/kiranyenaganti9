@@ -1,0 +1,23 @@
+test_actor_cannot_override_authenticated_context (test_audience_gate.AudienceGateTests) ... ok
+test_allow_delegated (test_audience_gate.AudienceGateTests) ... ok
+test_allow_direct (test_audience_gate.AudienceGateTests) ... ok
+test_allowed_dispatch_reaches_observed_sink_once (test_audience_gate.AudienceGateTests) ... ok
+test_changed_claim_subject (test_audience_gate.AudienceGateTests) ... ok
+test_cycle (test_audience_gate.AudienceGateTests) ... ok
+test_delegation_is_resource_specific (test_audience_gate.AudienceGateTests) ... ok
+test_denied_dispatch_does_not_reach_sink (test_audience_gate.AudienceGateTests) ... ok
+test_empty_chain (test_audience_gate.AudienceGateTests) ... ok
+test_expiry_boundary (test_audience_gate.AudienceGateTests) ... ok
+test_missing_scope (test_audience_gate.AudienceGateTests) ... ok
+test_other_authenticated_subject_has_no_root (test_audience_gate.AudienceGateTests) ... ok
+test_unknown_operation (test_audience_gate.AudienceGateTests) ... ok
+test_unknown_resource (test_audience_gate.AudienceGateTests) ... ok
+test_unregistered_direct_actor (test_audience_gate.AudienceGateTests) ... ok
+test_wrong_audience (test_audience_gate.AudienceGateTests) ... ok
+test_wrong_issuer (test_audience_gate.AudienceGateTests) ... ok
+test_wrong_tenant (test_audience_gate.AudienceGateTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.001s
+
+OK
