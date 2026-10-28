@@ -19,6 +19,12 @@ Through DataGovernAI, I am developing a research prototype for evidence checks, 
 - [Evidence before action: design walkthrough](https://www.kiranyenaganti.com/insights/when-agent-permission-should-expire/)
 - [Prototype engineering case study](https://www.kiranyenaganti.com/work/hominini/) (targeted developer checks)
 
+## Nothing: A Novel
+
+I am also the author of *Nothing: A Novel*, literary fiction about work, family and the hours people postpone living.
+
+[Book details and editions](https://www.kiranyenaganti.com/books/nothing/) · [Paperback](https://www.amazon.com/dp/B0HPKKMYDZ) · [Kindle](https://www.amazon.com/dp/B0HPJPLDXW)
+
 ## Connect
 
 [Website](https://www.kiranyenaganti.com/) · [LinkedIn](https://www.linkedin.com/in/kiran-yenaganti/) · [ORCID](https://orcid.org/0009-0008-6291-1316) · [Google Scholar](https://scholar.google.com/citations?user=bmWAnDgAAAAJ) · [SSRN](https://ssrn.com/author=13609628) · [DataGovernAI](https://www.crunchbase.com/organization/datagovernai)
